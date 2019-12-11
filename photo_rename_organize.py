@@ -1,7 +1,6 @@
 
 from PIL import Image
 import os
-import time
 import shutil
 
 
@@ -33,7 +32,3 @@ for img in os.listdir():
     if '.jpg' in img:
         shutil.move(img, str(img[0:10] + '/' + img))
 print('moved images to folders')
-
-
- 
-
